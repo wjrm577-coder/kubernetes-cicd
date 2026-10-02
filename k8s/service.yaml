@@ -1,0 +1,12 @@
+apiVersion: v1                         # Kubernetes API 버전 지정
+kind: Service                          # Service 리소스 지정
+metadata:                              # Service 메타데이터 영역
+  name: cicd-web-service               # Service 이름 지정
+  namespace: cicd-lab                  # 배포할 Namespace 지정
+spec:                                  # Service 상세 설정 영역
+  selector:                            # 연결할 Pod 선택 조건 지정
+    app: cicd-web                       # app=cicd-web Label 선택
+  ports:                               # Service Port 설정
+    - port: 80                          # Service Port 지정
+      targetPort: 80                    # Pod의 대상 Port 지정
+  type: ClusterIP                       # Cluster 내부 접근 방식 지정

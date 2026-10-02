@@ -1,0 +1,4 @@
+apiVersion: v1                         # Kubernetes API 버전 지정
+kind: Namespace                        # Namespace 리소스 지정
+metadata:                              # Namespace 메타데이터 영역
+  name: cicd-lab                       # Namespace 이름 지정
