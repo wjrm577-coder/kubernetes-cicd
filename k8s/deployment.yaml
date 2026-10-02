@@ -4,7 +4,7 @@ metadata:                              # Deployment 메타데이터 영역
   name: cicd-web                        # Deployment 이름 지정
   namespace: cicd-lab                  # 배포할 Namespace 지정
 spec:                                  # Deployment 상세 설정 영역
-  replicas: 2                          # 생성할 Pod 수 지정
+  replicas: 3                          # 생성할 Pod 수 지정
   selector:                            # 관리할 Pod 선택 조건 지정
     matchLabels:                        # Label 기반 Pod 선택
       app: cicd-web                     # app=cicd-web Label 선택
